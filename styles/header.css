@@ -1,0 +1,28 @@
+header {
+  padding-inline: 1rem;
+  margin-block: 1rem 10rem;
+  margin-inline: auto;
+  max-width: 450px;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 107.15px;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+  }
+}
+
+@media screen and(width > 80rem) {
+  header {
+    border: 1px solid red;
+    width: 1216px;
+  }
+}

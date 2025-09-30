@@ -1,0 +1,23 @@
+.hero {
+  margin-inline: auto;
+  h1 {
+    margin-inline: auto;
+    width: 343px;
+  }
+}
+
+@media screen and (width > 760px) {
+  .hero {
+    h1 {
+      width: 482px;
+    }
+  }
+}
+
+@media screen and (width > 80rem) {
+  .hero {
+    h1 {
+      width: 730px;
+    }
+  }
+}
