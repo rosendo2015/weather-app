@@ -1,8 +1,8 @@
 header {
   padding-inline: 1rem;
-  margin-block: 1rem 10rem;
+  margin-block: 1rem 3rem;
   margin-inline: auto;
-  max-width: 450px;
+  width: 100%;
   nav {
     display: flex;
     align-items: center;
@@ -25,16 +25,16 @@ header {
 }
 @media (width >= 760px) {
   header {
-    border: 1px solid red;
-
     margin-inline: auto;
+    max-width: 760px;
     nav {
-      width: 720px;
+      width: 100%;
     }
   }
 }
-@media screen and(width > 80rem) {
+@media (width >= 80rem) {
   header {
-    width: 1216px;
+    max-width: 76rem;
+    margin-block: 1rem 4rem;
   }
 }

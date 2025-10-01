@@ -16,6 +16,7 @@
   --blue-700: #2b1b9c;
 
   --ff-dm-sans: "DM Sans", sans-serif;
+  --ff-bricolage: "Bricolage Grotesque", sans-serif;
 }
 body {
   background-color: var(--neutral-900);
@@ -31,4 +32,12 @@ a {
 }
 img {
   max-width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

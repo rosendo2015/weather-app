@@ -1,16 +1,19 @@
 .hero {
   margin-inline: auto;
+  width: 100%;
   h1 {
+    margin: 0;
+    padding-inline: 1rem;
     text-align: center;
-    margin-inline: auto;
-    width: 343px;
+    font-family: var(--ff-bricolage);
     font-size: 52px;
   }
 }
 
-@media (width >= 760px) {
+@media (width >= 500px) {
   .hero {
     h1 {
+      margin-inline: auto;
       width: 500px;
     }
   }
