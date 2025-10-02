@@ -1,6 +1,7 @@
 .hero {
   margin-inline: auto;
   width: 100%;
+  padding-inline: 1rem;
   h1 {
     margin: 0;
     padding-inline: 1rem;
@@ -16,6 +17,7 @@
     .input-wrapper {
       padding: 8px 24px;
       width: 100%;
+      max-height: 56px;
       border: 1px solid var(--neutral-800);
       border-radius: 12px;
       display: flex;
@@ -73,6 +75,7 @@
       width: 730px;
     }
     .container-search {
+      max-width: 800px;
     }
   }
 }
