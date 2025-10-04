@@ -1,4 +1,5 @@
 #content {
+  margin-inline: auto;
   margin-block: 2rem 1.25rem;
   border-radius: 20px;
   overflow: hidden;
@@ -74,6 +75,25 @@
       }
     }
   }
+  .wrapper-day {
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: fit-content;
+    .mini-card-day {
+      text-align: center;
+      padding: 1rem 10px;
+      background-color: var(--neutral-800);
+      width: 103.66px;
+      height: 165px;
+      border-radius: 12px;
+    }
+    .footer-day {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 @media (width >= 600px) {
   #content {
@@ -90,12 +110,24 @@
       background-repeat: no-repeat;
     }
     .wrapper-info {
-    max-width: 100%;
-    width: 720px;
-    height: 50%;
-    
-    .mini-card-info {
       max-width: 100%;
-      width: 163.5px;
+      width: 720px;
+      height: 50%;
+
+      .mini-card-info {
+        max-width: 100%;
+        width: 163.5px;
+      }
     }
+    .wrapper-day {
+      width: 720px;
+      .mini-card-day {
+        text-align: center;
+        padding: 1rem 10px;
+        background-color: var(--neutral-800);
+        width: 88px;
+        height: 165px;
+      }
+    }
+  }
 }
