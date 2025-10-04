@@ -1,9 +1,10 @@
 #content {
   margin-inline: auto;
+  margin: 0 1rem;
   margin-block: 2rem 1.25rem;
   border-radius: 20px;
   overflow: hidden;
-  padding-inline: 1.5rem;
+
   .left-content {
     padding-block: 3rem;
     border-radius: 20px;
@@ -53,7 +54,7 @@
 
     .mini-card-info {
       max-width: 100%;
-      width: 163.5px;
+      width: 150px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -75,25 +76,54 @@
       }
     }
   }
-  .wrapper-day {
+  .wrapper-cards {
     margin-inline: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
     width: fit-content;
-    .mini-card-day {
-      text-align: center;
-      padding: 1rem 10px;
-      background-color: var(--neutral-800);
-      width: 103.66px;
-      height: 165px;
-      border-radius: 12px;
+    h2 {
+      margin-block: 3rem 1.25rem;
     }
-    .footer-day {
+    .wrapper-day {
+      width: fit-content;
+      max-width: 700px;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .mini-card-day {
+        width: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem 10px;
+        background-color: var(--neutral-800);
+
+        border-radius: 12px;
+        span {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+        }
+      }
+      .footer-day {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 1rem;
+        font-size: 12px;
+      }
     }
   }
+}
+#hourly {
+  border: 1px solid red;
+  margin-inline: auto;
+  margin: 1rem;
 }
 @media (width >= 600px) {
   #content {
@@ -120,12 +150,13 @@
       }
     }
     .wrapper-day {
+      border: red 1px solid;
       width: 720px;
       .mini-card-day {
         text-align: center;
         padding: 1rem 10px;
         background-color: var(--neutral-800);
-        width: 88px;
+        max-width: 85px;
         height: 165px;
       }
     }

@@ -41,3 +41,6 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+ul[rule="list"] {
+  list-style: none;
+}
