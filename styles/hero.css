@@ -54,7 +54,7 @@
   }
 }
 
-@media (width >= 600px) {
+@media (width >= 720px) {
   .hero {
     h1 {
       margin-inline: auto;

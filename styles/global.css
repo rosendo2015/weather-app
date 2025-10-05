@@ -44,3 +44,34 @@ img {
 ul[rule="list"] {
   list-style: none;
 }
+
+@media (width >= 80rem) {
+  .app {
+    padding-inline: 5rem;
+    margin-inline: auto;
+
+    width: 1440px;
+    max-width: 100%;
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "hero hero"
+      "content hourly";
+    header {
+      grid-area: header;
+    }
+    .hero {
+      grid-area: hero;
+    }
+    #content {
+      width: 100%;
+      grid-area: content;
+    }
+    #hourly {
+      width: 100%;
+      max-width: 345px;
+      max-height: 694px;
+      grid-area: hourly;
+    }
+  }
+}
