@@ -12,7 +12,10 @@ header {
     margin-inline: auto;
 
     .logo {
-      width: 107.15px;
+      width: 137.94px;
+      img {
+        width: 100%;
+      }
     }
     .nav-right {
       padding: 0.75rem 1rem;
@@ -36,8 +39,17 @@ header {
 }
 @media (width >= 80rem) {
   header {
-    width: 80rem;
-    max-width: 100%;
+    margin-inline: auto;
+    max-width: 80rem;
+    width: 100%;
     margin-block: 1rem 4rem;
+    nav {
+      .logo {
+        width: 200px;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }

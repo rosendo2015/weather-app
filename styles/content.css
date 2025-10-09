@@ -1,5 +1,5 @@
 #content {
-  max-width: 350px;
+  max-width: 345px;
   margin-inline: auto;
 
   margin-block: 2rem 1.25rem;
@@ -9,7 +9,7 @@
   .left-content {
     padding-block: 3rem;
     border-radius: 20px;
-    max-width: 100%;
+    min-width: 100%;
     height: 286px;
     background-image: url(../assets/images/mobile-hero.svg);
     background-size: cover;
@@ -210,16 +210,37 @@
   }
 }
 @media (width >= 80rem) {
-  #content {
-    max-width: 800px;
+  .app {
+    max-width: 83rem;
+    #content {
+      width: 800px;
+      margin-top: 0;
+      min-width: 100%;
+      padding: 0;
 
-    max-width: 100%;
-    .left-content {
-      margin-top: -1rem;
+      .left-content {
+        min-width: 100%;
+        background-size: auto;
+      }
+      .wrapper-cards {
+        width: 100%;
+        .wrapper-day {
+          justify-content: space-between;
+          min-width: 100%;
+
+          .mini-card-day {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--neutral-800);
+            min-width: 12%;
+            height: 165px;
+          }
+        }
+      }
     }
-  }
-  #hourly {
-    margin-inline: auto;
-    width: 100%;
+    #hourly {
+      margin-inline: auto;
+      width: 100%;
+    }
   }
 }
