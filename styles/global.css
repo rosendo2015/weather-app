@@ -25,6 +25,7 @@ body {
   font-weight: 500;
   color: var(--neutral-0);
   margin-inline: auto;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
